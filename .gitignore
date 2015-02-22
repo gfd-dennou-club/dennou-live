@@ -1,0 +1,13 @@
+live*
+chroot*
+*.img
+*.iso
+*.zsync
+*.md5sum
+*.buildlog
+.lock
+.build
+binary
+cache
+chroot
+config

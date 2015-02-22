@@ -1,0 +1,11 @@
+git
+git-svn
+git-cvs
+subversion
+cvs
+tmux
+screen
+corkscrew
+build-essential
+gfortran
+imagemagick
