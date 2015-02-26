@@ -1,6 +1,7 @@
 # gave
+ruby-hdfeos5
 gphys
-ruby-dclext-anim
+# ruby-dclext-anim
 # gfdnavi-utils
 # ruby-rails-2.3
 gtool5
@@ -10,3 +11,5 @@ netcdf-bin
 dcl-f77
 dcl-f90
 dcl-c
+#
+qiv
