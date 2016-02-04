@@ -5,7 +5,6 @@ fonts-ipafont
 emacs24
 emacs24-bin-common
 emacs24-common
-emacs24-common-non-dfsg
 emacs24-el
 less
 lv

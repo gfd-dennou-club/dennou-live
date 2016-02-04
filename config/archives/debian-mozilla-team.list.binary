@@ -1,1 +1,1 @@
-deb http://ftp.jp.debian.org/debian experimental main 
+deb http://ftp.jp.debian.org/debian jessie-backports main

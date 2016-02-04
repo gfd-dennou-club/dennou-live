@@ -1,7 +1,7 @@
 Debian Live DVD/USB (Jessie) with GFD-Dennou Club dcmodel/davis product
 ========================================================================
 
-Copyright(c) 2015: Youhei SASAKI <uwabami@gfd-dennou.org>
+Copyright(c) 2015-2016: Youhei SASAKI <uwabami@gfd-dennou.org>
 
 はじめに/ 追加情報など
 ----------------------
@@ -9,7 +9,7 @@ Copyright(c) 2015: Youhei SASAKI <uwabami@gfd-dennou.org>
 Debian Live DVD 制作後の追加情報や訂正は以下の URI にてアナウンスされます.
 この文書とあわせてお読みください.
 
-http://www.gfd-dennou.org/arch/cc-env/live-usb-dvd/index.htm
+  http://www.gfd-dennou.org/arch/cc-env/live-usb-dvd/index.htm
 
 目次
 ----
@@ -25,7 +25,7 @@ Debian Live について
 --------------------
 
 この DVD/USB は, Debian Live Project の live-build (=> 4.0~) を用いて制
-作されました. Debian GNU/Linux 8.0 (Jessie)ベースで作られており, 地球流
+作されました. Debian GNU/Linux 8.3 (Jessie)ベースで作られており, 地球流
 体電脳倶楽部のソフトウェアを気軽に試せるようになっています.
 
 Live DVD/USB として使う
@@ -70,7 +70,7 @@ Debian Live は, 起動時に「persistence」というラベル名の ext2/3/4 
 * Q. 日本語入力はどうするの?
 * A. uim-anthy を入れてあります．Super(Windowsキー or Commandキー) + SPACE で切り替え可能です．
 
-* Q. root 権限になるには, どうすればいいですか?
+* Q. root 権限を取得するには, どうすればいいですか?
 * A. sudo を使って下さい.
 
 * Q. キーボードが英語(日本語)キーボード配列になっている
