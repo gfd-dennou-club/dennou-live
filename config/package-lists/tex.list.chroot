@@ -1,6 +1,13 @@
 texlive-lang-japanese
 texlive-xetex
 texlive-luatex
+texlive-fonts-recommended 
+texlive-fonts-extra
+texlive-bibtex-extra
+texlive-latex-extra
+texlive-math-extra
+texlive-publishers
+texlive-science
 ghostscript
 xdvik-ja
 gv

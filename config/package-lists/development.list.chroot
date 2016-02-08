@@ -1,11 +1,29 @@
+# shell
+zsh
+tcsh
+fish
+# editor
+vim
+emacs24
+emacs24-bin-common
+emacs24-common
+emacs-mozc
+# pager
+less
+lv
+# vcs
 git
 git-svn
 git-cvs
 subversion
 cvs
+# terminal
 tmux
 screen
+# behind proxy
 corkscrew
+netcat-traditional
+# compiler
 build-essential
 gfortran
 imagemagick
