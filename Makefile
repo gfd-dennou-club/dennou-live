@@ -1,22 +1,12 @@
 all: usage
 
 usage:
-	@echo "make config-iso|config-usb|build|build-iso|build-usb|clean|distclean"
+	@echo "make config|build|clean|distclean"
 
-config: clean
+config: clean sync
 	sudo lb config
 build: config
 	sudo lb build
-
-config-iso: clean
-	lb config --binary-images iso
-build-iso: config-iso
-	sudo lb build
-config-usb: clean
-	lb config --binary-images hdd
-build-usb: config-usb
-	sudo lb build
-
 clean:
 	sudo lb clean
 	sudo rm -f *.log
@@ -30,3 +20,11 @@ distclean: clean
 	sudo rm -f config/common
 	sudo rm -f config/source
 	sudo rm -f config/build
+
+sync:
+	rsync -auvz -C \
+	  --exclude SIGEN.htm \
+	dennou-k.gfd-dennou.org:/GFD_Dennou_Club/ftp/arch/cc-env/live-usb-dvd/includes.chroot/ \
+	config/includes.chroot/
+	rm -f config/includes.chroot/Makefile
+	rm -f config/includes.chroot/SIGEN.htm

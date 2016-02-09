@@ -5,6 +5,7 @@ chroot*
 *.zsync
 *.md5sum
 *.buildlog
+*.log
 .lock
 .build
 binary
