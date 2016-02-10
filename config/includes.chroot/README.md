@@ -1,8 +1,8 @@
 Debian Live DVD/USB (Jessie) with GFD Dennou Club dcmodel/davis product
 =======================================================================
 
-Copyright(c) 2015-2016: Youhei SASAKI <uwabami@gfd-dennou.org>
-LICENSE: GPL-2+
+* Copyright(c) 2015-2016: Youhei SASAKI <uwabami@gfd-dennou.org>
+* LICENSE: GPL-2+
 
 はじめに/ 追加情報など
 ----------------------
