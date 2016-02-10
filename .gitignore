@@ -12,3 +12,4 @@ binary
 cache
 chroot
 config
+includes.chroot
