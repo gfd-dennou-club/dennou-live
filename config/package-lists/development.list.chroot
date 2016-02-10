@@ -26,3 +26,5 @@ lv
 build-essential
 gfortran
 imagemagick
+# misc
+aptitude
