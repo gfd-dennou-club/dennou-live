@@ -1,0 +1,40 @@
+#!/bin/sh
+
+MIRROR_DEBIAN="dennou-k.gfd-dennou.org/debian/"
+MIRROR_SECURITY="security.debian.org/"
+APT_PROXY="http://127.0.0.1:3142/"
+APT_CACHER="${APT_PROXY}${MIRROR_DEBIAN}"
+
+DISTRIBUTION="jessie"
+ARCH="amd64"
+MODE="debian"
+BOOTAPPEND_LIVE="boot=live config persistence splash noautologin locales=ja_JP.UTF-8 keyboard-layouts=jp"
+
+lb config noauto \
+  --apt-ftp-proxy "${APT_PROXY}" \
+  --apt-http-proxy "${APT_PROXY}" \
+  --apt-recommends true \
+  --architecture "${ARCH}" \
+  --archive-areas "main contrib non-free" \
+  --bootappend-live "${BOOTAPPEND_LIVE}" \
+  --debian-installer live \
+  --debian-installer-distribution jessie \
+  --debug true \
+  --distribution "${DISTRIBUTION}" \
+  --firmware-binary true \
+  --firmware-chroot true \
+  --iso-publisher "GFD Dennou Club" \
+  --mirror-binary "http://${MIRROR_DEBIAN}" \
+  --mirror-binary-security "http://${MIRROR_SECURITY}" \
+  --mirror-bootstrap "${APT_CACHER}" \
+  --mirror-chroot "http://${MIRROR_DEBIAN}" \
+  --mirror-chroot-security "http://${MIRROR_SECURITY}" \
+  --mode "${MODE}" \
+  --parent-mirror-binary "http://${MIRROR_DEBIAN}" \
+  --parent-mirror-binary-security "http://${MIRROR_SECURITY}" \
+  --parent-mirror-bootstrap "${APT_CACHER}" \
+  --parent-mirror-chroot "http://${MIRROR_DEBIAN}" \
+  --parent-mirror-chroot-security "http://${MIRROR_SECURITY}" \
+  --linux-packages "linux-image linux-headers" \
+  --win32-loader true \
+  ${@}

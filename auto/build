@@ -1,0 +1,4 @@
+#!/bin/sh
+
+BUILDDATE=`date +%Y-%m-%d-%H%M`
+lb build noauto 2>&1 | tee dennou-live-${BUILDDATE}.log

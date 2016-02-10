@@ -2,6 +2,7 @@ all: usage
 
 check:
 	@echo -n "Check package depndencies "
+	@dpkg -l apt-cacher-ng 2>&1 1>/dev/null
 	@dpkg -l isolinux 2>&1 1>/dev/null
 	@dpkg -l syslinux-common 2>&1 1>/dev/null
 	@dpkg -l pxelinux 2>&1 1>/dev/null
