@@ -1,0 +1,5 @@
+#!/bin/sh
+LANG=ja_JP.UTF-8 ; export LANG
+EDITOR=vim; export EDITOR
+VTE_CJK_WIDTH=1 ; export VTE_CJK_WIDTH
+CLUTTER_PAINT=disable-clipped-redraws:disable-culling ; export CLUTTER_PAINT

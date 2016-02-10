@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Command Prompt
+Comment=X terminal emulator
+Icon=utilities-terminal
+Exec=exo-open --launch TerminalEmulator
+Path=
+Terminal=false
+StartupNotify=true
+

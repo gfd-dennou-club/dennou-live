@@ -1,0 +1,8 @@
+grouping=2
+width=100
+all_workspaces=true
+expand=true
+flat_buttons=false
+show_handles=false
+fixed_width=true
+

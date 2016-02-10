@@ -1,0 +1,8 @@
+(define mozc-on-key '(generic-on-key))
+(define mozc-on-key? (make-key-predicate '(generic-on-key?)))
+(define mozc-off-key '(generic-off-key))
+(define mozc-off-key? (make-key-predicate '(generic-off-key?)))
+(define mozc-kana-toggle-key '())
+(define mozc-kana-toggle-key? (make-key-predicate '()))
+(define mozc-vi-escape-key '("escape" "<Control>["))
+(define mozc-vi-escape-key? (make-key-predicate '("escape" "<Control>[")))

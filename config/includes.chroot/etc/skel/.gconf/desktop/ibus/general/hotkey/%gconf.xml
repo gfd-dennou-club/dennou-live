@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="next_engine_in_menu" mtime="1298337168" type="list" ltype="string">
+	</entry>
+	<entry name="trigger" mtime="1298337161" type="list" ltype="string">
+		<li type="string">
+			<stringvalue>Zenkaku_Hankaku</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>Alt+Zenkaku_Hankaku</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>Release+Henkan_Mode</stringvalue>
+		</li>
+	</entry>
+</gconf>

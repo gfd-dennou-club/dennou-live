@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=File Manager
+Comment=Manage files and folders
+Icon=Thunar
+Exec=thunar
+Path=
+Terminal=false
+StartupNotify=true
+

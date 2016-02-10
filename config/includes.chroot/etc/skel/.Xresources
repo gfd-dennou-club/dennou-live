@@ -1,0 +1,32 @@
+!!!! Emacs !!!!
+! disable XIM 
+Emacs*useXIM: false
+! enable antialias
+Emacs.FontBackend: xft
+! disable antialias
+!Emacs.FontBackend: x
+
+!!!! XDvi !!!!
+XDvi.mainTranslatons: #override \
+  :<Key>h: left()\n\
+  :<Key>j: down()\n\
+  :<Key>k: up()\n\
+  :<Key>l: right\n\
+  :<Key>z: set-shrink-factor(-)\n\
+  :<Key>Z: set-shrink-factor(+)\n
+
+!!!! XTerm !!!!
+XTerm*utf8: 1
+XTerm*locale: true
+XTerm*cjkWidth: true
+XTerm*wideChars: true
+XTerm*alwaysBoldMode: false
+XTerm*BoldMode: false
+XTerm*colorBDMode: false
+XTerm*Font:     -efont-fixed-medium-r-normal-*-14-140-75-75-c-70-iso10646-1
+XTerm*boldFont: -efont-fixed-medium-r-normal-*-14-140-75-75-c-70-iso10646-1
+XTerm*wideFont: -efont-fixed-medium-r-normal-*-14-140-75-75-c-140-iso10646-1
+XTerm*ximFont:  -shinonome-gothic-medium-r-normal--14-130-75-75-c-140-jisx0208.1983-0,\
+                -efont-fixed-medium-r-normal-*-14-140-75-75-c-70-iso10646-1
+XTerm*scrollBar:        false
+

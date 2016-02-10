@@ -1,0 +1,16 @@
+[Tutorial]
+row=3
+col=0
+
+[ゴミ箱]
+row=2
+col=0
+
+[ファイルシステム]
+row=1
+col=0
+
+[ホーム]
+row=0
+col=0
+

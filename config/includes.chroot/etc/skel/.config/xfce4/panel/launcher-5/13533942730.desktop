@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Web Browser
+Comment=Surf the internet
+Icon=web-browser
+Exec=exo-open --launch WebBrowser
+Path=
+Terminal=false
+StartupNotify=false
+

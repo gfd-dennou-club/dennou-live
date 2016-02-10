@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="preload_engines" mtime="1298337055" type="list" ltype="string">
+		<li type="string">
+			<stringvalue>anthy</stringvalue>
+		</li>
+	</entry>
+	<entry name="trigger" mtime="1290591400" type="list" ltype="string">
+		<li type="string">
+			<stringvalue>Release+Henkan_Mode</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>Shift+space</stringvalue>
+		</li>
+	</entry>
+	<entry name="next_engine_in_menu" mtime="1290591406" type="list" ltype="string">
+	</entry>
+</gconf>

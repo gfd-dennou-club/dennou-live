@@ -1,0 +1,9 @@
+[Global]
+ShowFrame=false
+Rows=1
+
+[Applications]
+main.py=false
+wicd-client.py=false
+xfce4-power-manager=false
+
