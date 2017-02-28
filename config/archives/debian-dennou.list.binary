@@ -1,4 +1,3 @@
 # Unofficial GFD Dennou Club repository
 # GPG: 891D7E07
-deb http://dennou-k.gfd-dennou.org/arch/cc-env/debian-dennou jessie main
-
+deb http://dennou-k.gfd-dennou.org/arch/cc-env/debian-dennou stretch main

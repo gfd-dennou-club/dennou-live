@@ -3,7 +3,7 @@ zsh
 tcsh
 fish
 # editor
-emacs24
+emacs25
 emacs-mozc
 vim
 # vcs and related files
