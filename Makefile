@@ -37,29 +37,29 @@ distclean: clean
 	sudo rm -f config/source
 	sudo rm -f config/build
 
-# copy:
-# 	[ ! -d includes.chroot ] || \
-# 	  rsync -auvz includes.chroot/ config/includes.chroot/
+splash: check
+	[ ! -f splash.svg ] || \
+	  rsync -auv -L \
+	   /usr/share/live/images/xfce-desktop/config/bootloaders \
+	   config/
+	[ ! -f splash.svg ] || \
+	  cp -v splash.svg config/bootloaders/extlinux/
+	[ ! -f splash.svg ] || \
+	  cp -v splash.svg config/bootloaders/isolinux/
+	[ ! -f splash.svg ] || \
+	  cp -v splash.svg config/bootloaders/pxelinux/
+	[ ! -f splash.svg ] || \
+	  cp -v splash.svg config/bootloaders/syslinux/
 
-# splash: check
-# 	[ ! -f splash.svg ] || \
-# 	  rsync -auv -L \
-# 	   /usr/share/live/images/xfce-desktop/config/bootloaders \
-# 	   config/
-# 	[ ! -f splash.svg ] || \
-# 	  cp -v splash.svg config/bootloaders/extlinux/
-# 	[ ! -f splash.svg ] || \
-# 	  cp -v splash.svg config/bootloaders/isolinux/
-# 	[ ! -f splash.svg ] || \
-# 	  cp -v splash.svg config/bootloaders/pxelinux/
-# 	[ ! -f splash.svg ] || \
-# 	  cp -v splash.svg config/bootloaders/syslinux/
+sync:
+	rsync -auvz -C --delete \
+	  --exclude SIGEN.htm \
+	  --exclude .gitignore \
+	dennou-k.gfd-dennou.org:/GFD_Dennou_Club/ftp/arch/cc-env/live-usb-dvd/includes.chroot/ \
+	includes.chroot/
+	rm -f includes.chroot/Makefile
+	rm -f includes.chroot/SIGEN.htm
 
-# sync:
-# 	rsync -auvz -C \
-# 	  --exclude SIGEN.htm \
-# 	  --exclude .gitignore \
-# 	dennou-k.gfd-dennou.org:/GFD_Dennou_Club/ftp/arch/cc-env/live-usb-dvd/includes.chroot/ \
-# 	includes.chroot/
-# 	rm -f includes.chroot/Makefile
-# 	rm -f includes.chroot/SIGEN.htm
+copy:
+	[ ! -d includes.chroot ] || \
+	  rsync -auvz includes.chroot/ config/includes.chroot/

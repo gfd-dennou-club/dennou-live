@@ -8,7 +8,7 @@ APT_CACHER="${APT_PROXY}${MIRROR_DEBIAN}"
 DISTRIBUTION="stretch"
 ARCH="amd64"
 MODE="debian"
-BOOTAPPEND_LIVE="boot=live config persistence splash noautologin locales=ja_JP.UTF-8 keyboard-layouts=jp"
+BOOTAPPEND_LIVE="boot=live config persistence splash noautologin locales=ja_JP.UTF-8 keyboard-layouts=jp timezone=Asia/Tokyo"
 
 lb config noauto \
   --apt-ftp-proxy "${APT_PROXY}" \
