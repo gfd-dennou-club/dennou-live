@@ -106,13 +106,12 @@ Debian Live のカスタマイズについて
 カスタマイズには 10GB 程度の保存領域が必要となります．
 とりあえずは以下のコマンドによりビルドすることができます.
 
- % git clone git://github.com/uwabami/dennou-live.git
- % cd dennou-live.git
- % make
+       % git clone git://github.com/uwabami/dennou-live.git
+       % cd dennou-live.git
+       % make
 
 * make 時に必要なパッケージが足りないとエラーが出ます．必要なパッケージ
   をインストールして下さい．
-
 
 live-build でのカスタマイズ方法はマニュアルを読むのが一番です．
 `live-manual` パッケージを導入することで txt, html, pdf, epub 等様々な形

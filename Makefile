@@ -56,10 +56,11 @@ sync:
 	  --exclude SIGEN.htm \
 	  --exclude .gitignore \
 	dennou-k.gfd-dennou.org:/GFD_Dennou_Club/ftp/arch/cc-env/live-usb-dvd/includes.chroot/ \
-	includes.chroot/
+	config/includes.chroot/
 	rm -f includes.chroot/Makefile
 	rm -f includes.chroot/SIGEN.htm
 
-copy:
-	[ ! -d includes.chroot ] || \
-	  rsync -auvz includes.chroot/ config/includes.chroot/
+resync:
+	rsync -auvz -C --delete  \
+	  config/includes.chroot/ \
+	dennou-k.gfd-dennou.org:/GFD_Dennou_Club/ftp/arch/cc-env/live-usb-dvd/includes.chroot/
