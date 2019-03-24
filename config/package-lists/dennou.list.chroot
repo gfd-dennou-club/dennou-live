@@ -1,4 +1,8 @@
 gphys
 spml
 dcl-f77
+netcdf-bin
 nginx-light
+#
+gv
+qiv
