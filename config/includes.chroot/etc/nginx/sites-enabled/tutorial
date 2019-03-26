@@ -1,0 +1,14 @@
+server {
+       listen 80;
+       listen [::]:80;
+       root /var/www/html/Tutorial;
+       index index.html index.htm;
+       rewrite /index.htm.ja /index.html;
+       rewrite /index.htm.en /index.html;
+       location / {
+                autoindex on;
+       }
+       location ~ /\.ht {
+                deny all;
+       }
+}

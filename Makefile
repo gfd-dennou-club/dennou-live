@@ -11,7 +11,6 @@ check:
 	@dpkg -l live-boot 2>&1 1>/dev/null
 	@dpkg -l live-boot-initramfs-tools 2>&1 1>/dev/null
 	@dpkg -l live-tools 2>&1 1>/dev/null
-	@dpkg -l live-image-xfce-desktop 2>&1 1>/dev/null
 	@echo "... OK"
 
 usage:

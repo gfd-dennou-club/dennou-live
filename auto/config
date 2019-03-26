@@ -16,6 +16,7 @@ lb config noauto \
   --apt-recommends true \
   --architecture "${ARCH}" \
   --archive-areas "main contrib non-free" \
+  --backports true \
   --bootappend-live "${BOOTAPPEND_LIVE}" \
   --debian-installer live \
   --debian-installer-distribution "${DISTRIBUTION}" \
@@ -35,6 +36,7 @@ lb config noauto \
   --parent-mirror-bootstrap "${APT_CACHER}" \
   --parent-mirror-chroot "http://${MIRROR_DEBIAN}" \
   --parent-mirror-chroot-security "http://${MIRROR_SECURITY}" \
+  --updates true \
   --linux-packages "linux-image linux-headers" \
   --win32-loader true \
   ${@}
