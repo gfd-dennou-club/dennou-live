@@ -1,4 +1,4 @@
-Debian Live DVD/USB (Stretch) with GFD Dennou Club dcmodel/davis product
+Debian Live DVD/USB (Buster) with GFD Dennou Club dcmodel/davis product
 ========================================================================
 
 * Copyright(c) 2015-2018: Youhei SASAKI <uwabami@gfd-dennou.org>
@@ -26,7 +26,7 @@ Debian Live について
 --------------------
 
 この DVD/USB は Debian Live Project の live-build を用いて制作されました．
-Debian GNU/Linux 9 (Stretch)ベースで作られており，地球流体電脳倶楽部のソ
+Debian GNU/Linux 10 (Buster)ベースで作られており，地球流体電脳倶楽部のソ
 フトウェアを気軽に試せるようになっています．
 
 Live DVD/USB として使う
@@ -116,9 +116,3 @@ Debian Live のカスタマイズについて
 live-build でのカスタマイズ方法はマニュアルを読むのが一番です．
 `live-manual` パッケージを導入することで txt, html, pdf, epub 等様々な形
 式のマニュアルが読めるようになります．
-
-日本語の資料では, 関西 Debian 勉強会の資料があるのでそれを参考にするとよ
-いでしょう.
-
-関西 Debian 勉強会  資料
-http://tokyodebian.alioth.debian.org/pdf/debianmeetingresume200906-kansai.pdf

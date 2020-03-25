@@ -17,7 +17,7 @@ usage:
 	@echo "make config|build|clean|distclean"
 
 config: check clean
-	sudo lb config
+	sudo lb config --grub-splash=$(shell pwd)/splash.svg
 
 build: config
 	sudo lb build

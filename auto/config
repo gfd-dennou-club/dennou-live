@@ -5,7 +5,7 @@ MIRROR_SECURITY="security.debian.org/"
 APT_PROXY="http://127.0.0.1:3142/"
 APT_CACHER="${APT_PROXY}${MIRROR_DEBIAN}"
 
-DISTRIBUTION="stretch"
+DISTRIBUTION="buster"
 ARCH="amd64"
 MODE="debian"
 BOOTAPPEND_LIVE="boot=live config persistence splash noautologin locales=ja_JP.UTF-8 keyboard-layouts=jp timezone=Asia/Tokyo"
@@ -20,6 +20,7 @@ lb config noauto \
   --bootappend-live "${BOOTAPPEND_LIVE}" \
   --debian-installer live \
   --debian-installer-distribution "${DISTRIBUTION}" \
+  --debootstrap-options "--include=gnupg2,apt-utils,apt-transport-https,ca-certificates" \
   --debug true \
   --distribution "${DISTRIBUTION}" \
   --firmware-binary true \
