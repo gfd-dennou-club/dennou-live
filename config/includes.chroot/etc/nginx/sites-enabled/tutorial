@@ -1,6 +1,6 @@
 server {
-       listen 80;
-       listen [::]:80;
+       listen 80 default_server;
+       listen [::]:80 default_server;
        root /var/www/html/Tutorial;
        index index.html index.htm;
        rewrite /index.htm.ja /index.html;

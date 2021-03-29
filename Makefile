@@ -17,7 +17,7 @@ usage:
 	@echo "make config|build|clean|distclean"
 
 config: check clean
-	sudo lb config --grub-splash=$(shell pwd)/splash.svg
+	sudo lb config
 
 build: config
 	sudo lb build
@@ -39,8 +39,12 @@ distclean: clean
 splash: check
 	[ ! -f splash.svg ] || \
 	  rsync -auv -L \
-	   /usr/share/live/images/xfce-desktop/config/bootloaders \
+	   /usr/share/live/build/bootloaders \
 	   config/
+	[ ! -f splash.png ] || \
+	  cp -v splash.png config/bootloaders/grub-pc/
+	[ ! -f splash.xpm.gz ] || \
+	  cp -v splash.xpm.gz config/bootloaders/grub-legacy/
 	[ ! -f splash.svg ] || \
 	  cp -v splash.svg config/bootloaders/extlinux/
 	[ ! -f splash.svg ] || \

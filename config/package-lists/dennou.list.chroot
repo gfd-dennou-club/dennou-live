@@ -1,10 +1,14 @@
-# gphys
-# spml
+gphys
+spml
 dcl-f77
 netcdf-bin
 nginx-light
+wget
 #
 gv
 qiv
 #
 grads
+#
+rdtool
+ruby-liquid
